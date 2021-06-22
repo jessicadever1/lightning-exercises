@@ -110,16 +110,29 @@ let employee = {
     age: 37,
     department: "legal",
     hire_date: "09/22/2010"
-  }
+}
 
-  console.log("Our company's lawyer is", employee.name)
-  console.log("Jeff was hired on", employee["hire_date"])
-  
+console.log("Our company's lawyer is", employee.name)
+console.log("Jeff was hired on", employee["hire_date"])
+
 //   employee.vaction_days = 20
-  employee["vaction_days"] = 20
+employee["vaction_days"] = 20
 
-  let eom = "employee_of_the_month";
+let eom = "employee_of_the_month";
 
-  employee.eom = false
-  employee[eom] = false
-  console.log(employee)
+employee.eom = false
+employee[eom] = false
+console.log(employee)
+
+let arrayOfNums = [1, 2, 3, 4, 5, 6]
+
+function add(total, a) {
+    return total + a
+}
+
+let sum = arrayOfNums.reduce(add, 0)
+
+console.log ("sum", sum)
+
+let sum2 = arrayOfNums.reduce(add, 0);
+console.log("sum2", sum2)
