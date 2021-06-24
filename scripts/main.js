@@ -136,3 +136,22 @@ console.log ("sum", sum)
 
 let sum2 = arrayOfNums.reduce(add, 0);
 console.log("sum2", sum2)
+
+
+// Warmup 1: Get Average
+// Write a function that will accept any number of integer or 
+// decimal arguments and return the average of those arguments.
+
+
+function getAverage() {
+    let array = Array.from(arguments)
+    let sum = array.reduce(add, 0)
+    let avg = sum/array.length
+    console.log("avg", avg)
+}
+
+getAverage(1, 2, 3, 4, 5)
+getAverage(0, 2)
+getAverage(8, 6, 7, 5, 3, 0, 9)
+
+
