@@ -46,6 +46,13 @@
         `
     })
 
+    let btn2 = document.querySelector(".wedBtn")
+
+    btn2.addEventListener("click", ()=> {
+        const imgDiv = document.querySelector(".imgContainer")
+        imgDiv.innerHTML = `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4x3qmxtqL7X0ZKutYMCMNnFc__dk7xt5aQQ&usqp=CAU">`
+    })
+
     // Lightning Round - Exercise 4 - Looping
 
 //     let family = [
