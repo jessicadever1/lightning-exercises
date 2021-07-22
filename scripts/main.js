@@ -53,6 +53,13 @@
         imgDiv.innerHTML = `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4x3qmxtqL7X0ZKutYMCMNnFc__dk7xt5aQQ&usqp=CAU">`
     })
 
+    let btn3 = document.querySelector(".thursBtn")
+
+    btn3.addEventListener("click", () => {
+        const imgDiv = document.querySelector(".imgBox")
+        imgDiv.innerHTML = `<img src="https://media0.giphy.com/media/ce280BjADCmsfgps4t/giphy.gif" alt="thursday img">`
+    })
+
     // Lightning Round - Exercise 4 - Looping
 
 //     let family = [
