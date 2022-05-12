@@ -239,3 +239,26 @@ function timeConversion(s) {
 }
 
 timeConversion('07:45:54PM')
+
+function absoluteDifference(arr){
+    
+    var sumDiagnoalOne=0
+    var sumDiagnoalTwo=0
+    for(var i=0; i<arr.length; i++){
+    
+        for(var j=i; j<arr.length; j++){
+            sumDiagnoalOne+=arr[i][j]
+            break
+        }
+    }
+    var checkArray=[]
+    arr.map(array=>checkArray.push(array.reverse()))
+    for(var i=0; i<checkArray.length; i++){
+    
+        for(var j=i; j<checkArray.length; j++){
+            sumDiagnoalTwo+=checkArray[i][j]
+            break
+        }
+    }
+    return Math.abs(sumDiagnoalOne- sumDiagnoalTwo)
+}
